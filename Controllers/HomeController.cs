@@ -70,7 +70,6 @@ public class HomeController : Controller
         return RedirectToAction("Index");
     }
 
-    [HttpDelete]
     public IActionResult Delete(int id)
     {
         Inventory invId = dbContext.Inventories.Find(id);

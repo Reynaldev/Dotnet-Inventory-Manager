@@ -20,7 +20,7 @@
 
     <fieldset disabled>
         <div class="mb-3 row">
-            @Html.LabelFor(model => model.Id, htmlAttributes: new { @class ="col-sm-3 col-form-label" })
+            <label class="col-sm-3 col-form-label" for="Id">ID</label>
             <div class="col-sm-9">
                 @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-control"} })
                 @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
@@ -29,7 +29,7 @@
     </fieldset>
 
     <div class="mb-3 row">
-        @Html.LabelFor(model => model.ItemName, htmlAttributes: new { @class ="col-sm-3 col-form-label" })
+        <label class="col-sm-3 col-form-label" for="ItemName">Item Name</label>
         <div class="col-sm-9">
             @Html.EditorFor(model => model.ItemName, new { htmlAttributes = new { @class = "form-control"} })
             @Html.ValidationMessageFor(model => model.ItemName, "", new { @class = "text-danger" })
@@ -37,7 +37,7 @@
     </div>
 
     <div class="mb-3 row">
-        @Html.LabelFor(model => model.DatePurchased, htmlAttributes: new { @class ="col-sm-3 col-form-label" })
+        <label class="col-sm-3 col-form-label" for="DatePurchased">Date Purchased</label>
         <div class="col-sm-9">
             @Html.EditorFor(model => model.DatePurchased, new { htmlAttributes = new { @class = "form-control"} })
             @Html.ValidationMessageFor(model => model.DatePurchased, "", new { @class = "text-danger" })
@@ -45,7 +45,7 @@
     </div>
 
     <div class="mb-3 row">
-        @Html.LabelFor(model => model.Quality, htmlAttributes: new { @class ="col-sm-3 col-form-label" })
+        <label class="col-sm-3 col-form-label" for="Quality">Quality</label>
         <div class="col-sm-9">
             @Html.DropDownList("Quality", new List<SelectListItem> 
                 {
