@@ -18650,6 +18650,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Rey\\Documents\\My Coding\\C#\\Dotnet Inventory Manager\\Views\\Home\\Create.cshtml",
+      "TargetPath": "Views\\Home\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Rey\\Documents\\My Coding\\C#\\Dotnet Inventory Manager\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -18667,6 +18672,11 @@
     {
       "FilePath": "c:\\Users\\Rey\\Documents\\My Coding\\C#\\Dotnet Inventory Manager\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Rey\\Documents\\My Coding\\C#\\Dotnet Inventory Manager\\Views\\Home\\Edit.cshtml",
+      "TargetPath": "Views\\Home\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {

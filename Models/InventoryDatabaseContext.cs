@@ -25,10 +25,11 @@ public partial class InventoryDatabaseContext : DbContext
     {
         modelBuilder.Entity<Inventory>(entity =>
         {
+            entity.HasKey(e => e.Id).HasName("PK__Inventor__3214EC07AF832C1D");
+
             entity.ToTable("Inventory");
 
-            entity.Property(e => e.Id).ValueGeneratedNever();
-            entity.Property(e => e.DatePurchased).HasColumnType("date");
+            entity.Property(e => e.DatePurchased).HasColumnType("datetime");
             entity.Property(e => e.ItemName).HasMaxLength(50);
             entity.Property(e => e.Quality).HasMaxLength(50);
         });

@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Dotnet_Inventory_Manager</RootNamespace>
+    <UserSecretsId>097b82d5-61d1-46be-bde0-057a63b8c3c7</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
