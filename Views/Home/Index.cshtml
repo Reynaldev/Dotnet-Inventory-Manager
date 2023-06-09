@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Inventory>;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Inventory Data</h2>
+
+<br><br><br>
+
+<table class="table table-striped justify-content-center">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Id)</th>
+            <th>@Html.DisplayNameFor(model => model.ItemName)</th>
+            <th>@Html.DisplayNameFor(model => model.DatePurchased)</th>
+            <th>@Html.DisplayNameFor(model => model.Quality)</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Inventory inventory in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(model => inventory.Id)</td>
+                <td>@Html.DisplayFor(model => inventory.ItemName)</td>
+                <td>@Html.DisplayFor(model => inventory.DatePurchased)</td>
+                <td>@Html.DisplayFor(model => inventory.Quality)</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", "Home", new { id = inventory.Id })
+                    | 
+                    @Html.ActionLink("Delete", "Delete", "Home", new { id = inventory.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-area="" asp-controller="Home" asp-action="Create">+ Add New</a>
+
+<br><br><br>
